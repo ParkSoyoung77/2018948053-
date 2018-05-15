@@ -1,0 +1,175 @@
+# 1번
+
+l=input("문자열 : ")
+print("문자열 길이 : ",len(l))
+print("첫 번째 문자 : ", str(l[0]))
+print("두 번째 문자 : ", str(l[1]))
+print("마지막 문자 : ", str(l[-1]))
+
+
+
+
+
+# 2번
+
+str = {input("문자열 : ")}
+
+def solo(str):
+    str_solo=""
+    return str_solo
+
+def rev(str):
+    str_rev="".join(reversed(str))
+    return str_rev
+
+cnvt = int(input("1(solo),2(rev):"))
+
+if(cnvt >= 1 and cnvt <= 2):
+    if (cnvt == 1):
+        rst = solo(str)
+        print("개별 문자 출력 :", rst)
+    if (cnvt == 2):
+        rst = rev(str)
+        print("역순 개별 문자 출력 :", rst)
+else:
+    print("1(solo),2(rev)")
+
+
+
+
+# 3번
+
+score=int(input("점수 : "))
+score>=0 and score<=100
+
+if (score>=90 and score<=100):
+    print(score,": A")
+elif (score>=80 and score<=89):
+    print(score,": B")
+elif (score>=70 and score<=79):
+    print(score,": C")
+elif (score>=60 and score<=69):
+    print(score,": D")
+elif (score>=0 and score<=59):
+    print(score,": F")
+else:
+    print("입력 가능한 점수 범위는 0~100입니다.")
+
+
+
+
+
+# 4번
+
+deg={10:"A",9:"A",8:"B",7:"C",6:"D",5:"F",4:"F",2:"F",1:"F",0:"F"}
+
+def score(deg):
+    score = score//10
+    
+
+score=int(input("점수 : "))
+r = score
+print(r,":",deg)
+
+
+
+
+
+# 5번
+
+def items(seq):
+    items_dict = {"라면":650, "우유":1100, "콜라":1200, "캔커피":500, "과자":700}
+
+n=1
+s=0
+
+while True:
+    product = input("제품명: ")
+    if (n>0):
+        s += n
+    items[it]
+    if (items==0):
+        break
+
+print("[$s:%d] > %d"%(it, items[it], s))
+
+
+
+
+
+
+# 6번
+
+def comp(seq):
+    engkor_dict={'Python':'파이썬','string':'문자열','interaction':'반복','selection':'선택'}
+    seq_comp= ""
+    for char in seq:
+        seq_comp += engkor_dict[char]
+    return seq_comp
+
+while True:
+    eng = input("영어 단어 : ")
+    kor = input("한글 단어 : ")
+    if kor:
+        print("한글 단어 : ",eng=comp(seq))
+    elif eng == 0 and kor == 0:
+        continue
+    else:
+        print("{'Python':'파이썬','string':'문자열','interaction':'반복','selection':'선택'}")
+
+
+
+
+# 7번
+
+def comp(seq):
+    engkor_dict={'Python':'파이썬','string':'문자열','interaction':'반복','selection':'선택'}
+    seq_comp= ""
+    for char in seq:
+        seq_comp += engkor_dict[char]
+    return seq_comp
+
+while True:
+    eng = input("영어 단어 : ")
+    kor = input("한글 단어 : ")
+    if kor:
+        print("한글 단어 : ",eng=comp(seq))
+    elif kor == 0:
+                 print("사전이 비어 있습니다.")
+                 print("단어를 추가합니다.")
+                 print("한글 단어 : ",eng=comp(seq))
+    elif eng == 0 :
+        continue
+    else:
+        print("{'Python':'파이썬','string':'문자열','interaction':'반복','selection':'선택'}")
+
+
+
+
+
+# 8번
+
+import time
+
+for time in range(1,6):
+    print(time,"",end="")
+
+import time    
+time.sleep(1)
+
+
+
+
+
+# 9번
+
+import math
+
+num = input("실수 : ")
+print(num, ":" , math.ceil(3.14))
+print(num, ":" , math.floor(3.14))
+print(num, ":" , math.trunc(3.14))
+
+
+
+
